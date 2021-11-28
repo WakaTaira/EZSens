@@ -4,7 +4,7 @@ from get import Gets
 from calc import Calculation
 
 while True:
-    print('計算を終了したかったら "!q" か "!r" を入力')
+    print('計算を終了したかったら "!q" を、やり直したかったら "!r" を入力')
     get = Gets()
     game, aratio, mdratio, curfov, curdist = get.Input()
     calculation = Calculation()
