@@ -155,6 +155,7 @@ class Calculation(Pycolor):
     def __del__(self):
         if self.distance_with_optics is not None:
             for optics, distance in self.distance_with_optics.items():
-                print("\n" + str(distance) + "[cm/360°] を " + str(optics) + " で")
+                print(f"\n{optics} は {distance}[cm/360°]")
+            print("\n上に示した振り向きで設定")
             print(
                 self.RED + "\n振り向きからセンシへの計算は " + self.BLUE + "https://www.mouse-sensitivity.com" + self.RED + " を使えばヨシ！ その計算方法はあんまりわかってない\n" + self.END)

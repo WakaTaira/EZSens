@@ -48,7 +48,7 @@ class Gets(Commands, Pycolor):
     # Monitor Distance[%]の取得
     def MDRatio(self):
         mdratio = input(
-            "水平Monitor Distanceを入力、0から1の割合で" + self.CYAN + "\n=> " + self.END)
+            "0から1の割合で水平Monitor Distanceを入力" + self.CYAN + "\n=> " + self.END)
         command = self.read_if_command(mdratio)
         if command == 0:
             self.game = self.aratio = None
