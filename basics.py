@@ -1,3 +1,6 @@
+from sys import exit
+
+
 # 標準入出力時に使用する色コード等
 class Pycolor:
     BLACK = "\033[30m"
