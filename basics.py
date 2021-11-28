@@ -1,9 +1,8 @@
 from sys import exit
 from os import system
 
+
 # 標準入出力時に使用する色コード等
-
-
 class Pycolor:
     BLACK = "\033[30m"
     RED = "\033[31m"
