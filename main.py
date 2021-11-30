@@ -4,11 +4,14 @@
 from get import Gets
 from calc import Calculation
 
-# main関数
+GAMELIST = ['Apex', 'R6S', 'Valorant', 'Splitgate', 'CSGO', 'Overwatch']
+print('このプログラムは16:9のモニターでプレイしている人向けです。\n')
+
+# main loop
 while True:
     print('計算を終了したかったら "!q" を、やり直したかったら "!r" を入力')
     get = Gets()
-    game, aratio, mdratio, curfov, curdist = get.Input()
+    game, aratio, mdratio, curfov, curdist = get.Input(GAMELIST)
     calculation = Calculation()
     calc = calculation.calc(game, aratio, mdratio, curfov, curdist)
     del calculation
