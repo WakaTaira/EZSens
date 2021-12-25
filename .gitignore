@@ -1,3 +1,45 @@
+# すべて一旦git管理対象外に
+*
+# !をつかって、.を含むファイルはgit管理対象に
+!*.*
+# ディレクトリを管理対象に
+!*/
+# 拡張子を含まないファイル
+!Makefile
+
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
 # メモ書き
 memo.txt
 hoge.py
