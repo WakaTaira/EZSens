@@ -1,2 +1,2 @@
 EZSens:
-    g++ -std=c++20 EZSens.cpp -o EZSens
+	g++ EZSens.cpp -o EZSens -std=c++20 
